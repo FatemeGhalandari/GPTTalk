@@ -1,7 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
 import "./rootLayout.css";
 
-const Root = () => {
+const RootLayout = () => {
   return (
     <div className="rootLayout">
       <header>
@@ -9,6 +9,7 @@ const Root = () => {
           <img src="/logo.png" alt="logo" />
           <span>GPTTalk</span>
         </Link>
+        <div className="user">user</div>
       </header>
       <main>
         <Outlet />
@@ -17,4 +18,4 @@ const Root = () => {
   );
 };
 
-export default Root;
+export default RootLayout;
